@@ -1,16 +1,26 @@
 {
-  "name": "capstone-wd201-main",
+  "name": "myproject",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veena4512/Myproject.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veena4512/Myproject/issues"
+  },
+  "homepage": "https://github.com/Veena4512/Myproject#readme",
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
+    "firebase-admin": "^11.5.0",
     "mathjs": "^11.8.0",
     "path": "^0.12.7"
   }
