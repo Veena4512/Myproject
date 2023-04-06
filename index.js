@@ -2,7 +2,7 @@ const e = require("express");
 const express = require("express");
 const math=require("mathjs");
 const app = express();
-const port = 2000;
+const port = 3000;
 
 const { initializeApp , cert } = require("firebase-admin/app");
 const { getFirestore } = require("firebase-admin/firestore");
