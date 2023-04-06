@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book store</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		div {
+			color: black;
+			text-align: center;
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+		}
+
+		img {
+			height: 200px;
+			width: 180px;
+			padding-bottom: 20px;
+		}
+
+		button {
+			margin-top: 10px;
+		}
+
+		.display-6 {
+			color: midnightblue;
+			font-weight: 500;
+		}
+	</style>
+</head>
+<body>
+	<div class="container mt-3">
+		<div class="row">
+			<div class="col-lg-8">
+				<h2 class="display-6">Manga Store</h2>
+			</div>
+		</div><br>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12 ">
+				<img class="img rounded" src="./i1.jpg"/>
+				<b><br>Haikyuu</b><br>
+				<form action="addedToCart" method="GET">
+					<input type="text" style="width:65px; font-weight:bold;" name="cost" value="1360/-">
+					<del><small>1500/-</small></del><br>
+					<button type="submit" name="item" value="Haikyuu">ADD TO CART</button>
+				</form>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12 ">
+				<img class="img rounded" src="i2.jpg" >
+				<b><br>Jujutsu Kaisen</b><br>
+				<form action="addedToCart" method="GET">
+					<input type="text" style="width:65px; font-weight:bold;" name="cost" value="1100/-">
+					<del><small>1350/-</small></del><br>
+					<button type="submit" name="item" value="Jujutsu Kaisen">ADD TO CART</button>
+				</form>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<img class="img rounded" src="i3.jpg" >
+				<b><br>Takt op. destiny</b><br>
+				<form action="addedToCart" method="GET">
+					<input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-">
+					<del><small>1000/-</small></del><br>
+					<button type="submit" name="item" value="Takt op. destiny">ADD TO CART</button>
+				</form>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<img class="img rounded" src="i4.jpg">
+				<b><br>Horimiya</b><br>
+				<form action="addedToCart" method="GET">
+					<input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-">
+					<button type="submit" name="item" value="Horimiya">ADD TO CART</button>
+				</form> 
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<img class="img rounded" src="i5.jpg">
+				<b><br>Death Note</b><br>
+				<form action="addedToCart" method="GET">
+					<input type="text" style="width:65px; font-weight:bold;" name="cost" value="799/-">
+					<button type="submit" name="item" value="Death Note">ADD TO CART</button>
+				</form> 
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12">
+				<img class="img rounded" src="i6.jpg">
+				<b><br>Hello World</b><br>
+				<form action="addedToCart" method="GET">
+					<input type="text" style="width:65px; font-weight:bold;" name="cost" value="899/-">
+					<button type="submit" name="item" value="Hello World">ADD TO CART</button>
+				</form> 
+			</div>
+			<form action="cart" method="GET">
+				<center><input type="submit" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+			</form>
+			<br><br>
+		</div>
+	</div>
+</body>
+</html>

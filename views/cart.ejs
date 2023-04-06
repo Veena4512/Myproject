@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cart</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                align-content: center;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                padding-left: 250px;
+            }
+            .container {
+                padding-top: 80px;
+            }
+            .card {
+                width: 900px;
+                background-color: lightgoldenrodyellow;
+                height: 600px;
+                padding-left: 200px;
+                padding-top: 50px;
+            }
+            table {
+                width: 500px;
+                height: 250px;
+            }
+            th {
+                background-color: darkorange;
+            }
+            tr:nth-child(even) {
+                background-color: pink;
+            }
+            tr:last-child {
+                background-color: lightcoral;
+            }
+            p {
+                color: green;
+            }
+            i {
+                font-size: 2rem;
+            }
+            .col-lg-2 {
+                display: inline-block;
+                text-align: center;
+                margin-right: 20px;
+            }
+            span {
+                display: block;
+            }
+            b {
+                padding-left: 120px;
+                color: midnightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <table>
+                    <tr>
+                        <th>Items </th>
+                        <th>Cost </th>
+                    </tr>
+                    <% for(var i=0;i<booksData.length;i++){ %>
+                        <tr>
+                            <td><%= booksData[i] %></td>
+                            <td><%= costs[i] %></td>
+                        </tr>
+                    <% } %>
+                    <tr>
+                        <th>Total Cost</th>
+                        <th><%= amount %></th>
+                    </tr>
+                </table>
+                <p><i></i> Your order is eligible for FREE Delivery</p>
+                <button type="submit" style="width:30%;font-weight: bold;margin-left: 150px;">Proceed to Buy</button>
+                <br><br>
+                <div class="row">
+                    <div class="col-lg-2"><i></i><br><span>free delivery</span></div>
+                    <div class="col-lg-2"><i></i><br><span>secure Payment</span></div>
+                    <div class="col-lg-2"><i></i><br><span>Trace Location</span></div>
+                </div><br>
+                <b>Happy shopping !! shop again..,,</b>
+            </div>
+        </div>
+    </body>
+</html>
